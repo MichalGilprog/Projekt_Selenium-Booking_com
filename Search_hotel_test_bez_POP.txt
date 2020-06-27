@@ -1,0 +1,125 @@
+from random import randrange
+from time import sleep
+from random import randint
+from datetime import date, timedelta
+import datetime
+import pytest
+import unittest
+
+
+from selenium import webdriver
+from selenium.common.exceptions import NoSuchElementException
+from webdriver_manager.chrome import ChromeDriverManager
+
+driver = webdriver.Chrome(ChromeDriverManager().install())
+driver.implicitly_wait(3)
+driver.maximize_window()
+driver.get("https://www.booking.com/")
+print(driver.title)
+
+dateB2 = date.today()+timedelta(7)
+date2 = dateB2.strftime("%#d %B %Y")
+date3 = (dateB2 + timedelta(10)).strftime("%#d %B %Y")
+print(date2)
+print(date3)
+
+driver.find_element_by_xpath("//a[contains(text(),'Odrzuć')]").click()
+driver.find_element_by_xpath("//a[@class='popover_trigger']").click()
+driver.find_element_by_xpath("//li[@class='lang_en-gb']").click()
+#driver.find_element_by_xpath("//a[contains(text(),'Decline')]").click()
+
+
+#driver.find_element_by_xpath("//div[@class='cookie-warning-v2__banner-cta']"
+#                             "/a[text()='Odrzuć']").click()
+cityInput = driver.find_element_by_id("ss")
+cityInput.send_keys("Hel")
+driver.find_element_by_xpath("//span[@class='search_hl_name']").click()
+#driver.find_element_by_xpath("//div[@class='bui-calendar__control bui-calendar__control--next']").click()
+logInData = driver.find_element_by_xpath(
+    "//td[@class='bui-calendar__date']//span[contains(@aria-label,'"+str(date2)+"')]")
+logInData.click()
+logOutData = driver.find_element_by_xpath(
+    "//td[@class='bui-calendar__date']//span[contains(@aria-label,'"+str(date3)+"')]")
+logOutData.click()
+
+#driver.find_element_by_id("xp__guests__toggle")
+#frame = driver.find_element_by_id("xp__guests__inputs-container")
+
+try:
+    isFrame = driver.find_element_by_xpath("//label[@id='xp__guests__toggle'][@aria-expanded='true']")
+    print("Is eneble")
+
+except NoSuchElementException:
+
+    print("Is disable so I click on it")
+    driver.find_element_by_id("xp__guests__toggle").click()
+
+driver.find_element_by_xpath("//div[@class='sb-group__field sb-group__field-adults']"
+                             "//button[contains(@class,'bui-button bui-button--secondary bui-stepper__subtract-button')] ").click()
+
+#driver.find_element_by_xpath("//div[@class='sb-group__field adults']"
+#                             "//button[contains(@class,'subtract-button')] ").click()
+
+addButton = driver.find_element_by_xpath("//div[contains(@class,'sb-group__field sb-group-children')]"
+                                         "//button[contains(@class,'bui-button bui-button--secondary bui-stepper__add-button')]")
+#addButton = driver.find_element_by_xpath("//div[contains(@class,'sb-group__field children')]"
+#                                         "//button[contains(@class,'add-button')]")
+
+addButton.click()
+addButton.click()
+
+children = driver.find_elements_by_name("age")
+print(len(children))
+# if len(children) > 1:
+# children[0].click()
+# i = 0
+for child in children:
+    child.location_once_scrolled_into_view
+    child.click()
+    child.send_keys(randrange(18))
+    child.click()
+
+driver.find_element_by_class_name("xp__button").click()
+
+results = driver.find_elements_by_xpath("//div[@id='hotellist_inner']/div[contains(@class,'sr_flex_layout')]")
+print(len(results))
+hotels = driver.find_elements_by_xpath(
+    "//h3[contains(@class,'sr-hotel__title')]//span[contains(@class,'sr-hotel__name')]")
+hotel_names = [hotel.get_attribute("textContent") for hotel in hotels]
+for name in hotel_names:
+   # print("Hotel name: " + name)
+    print(name)
+
+prices = driver.find_elements_by_xpath(
+    "//div[contains(@class,'prc-d-sr-wrapper')]//div[contains(@class,'bui-price-display__value')]")
+price_values = [price.get_attribute("textContent") for price in prices]
+i = 0
+for hotel_price in price_values:
+    i += 1
+    print("Cena " + str(i) + " hotelu: " + hotel_price[-3:])
+list_prices=[ hotel_price[-3:-1] for hotel_price in price_values]
+print(list_prices)
+
+
+    # //div[contains(@class,'prc-d-sr-wrapper')]//span[contains(@class,'bui-u-sr-only')]
+# //div[contains(@class,'prc-d-sr-wrapper')]//div[contains(@class,'bui-price-display__value')]
+aa = driver.find_element_by_partial_link_text("zł")
+print(aa.text)
+
+assert (a == aa.text for a in list_prices)
+
+
+
+for a in list_prices:
+    print (a +' = '+ aa.text)
+
+
+
+Hel_results =driver.find_elements_by_xpath("//div[@id='hotellist_inner']//a[contains (text(),'Hel')]")
+print(len(Hel_results))
+Hel_hotels = [Hel.text for Hel in Hel_results]
+print(Hel_hotels)
+
+
+#driver.quit()
+

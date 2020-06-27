@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c6c7e8f1-d0f7-4eba-b2fc-f8a3beecfc79" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\Michał\Desktop\TESTER_Automaty\Zjazd_5\Booking_com\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1dalAPTu25qLSBf6hWsurqY6QJz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Michał\Desktop\TESTER Automaty\Zjazd 5\Booking_com\tests" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Michał\Desktop\TESTER_Automaty\Zjazd_5\Booking_com\tests" />
+      <recent name="C:\Users\Michał\Desktop\TESTER Automaty\Zjazd 5\Booking_com" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.pytest in test_hotel_search.py">
+    <configuration name="Search_hotel_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Booking_com" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Search_hotel_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_hotel_search" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Booking_com" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_hotel_search.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <module name="Booking_com" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\Michał\Desktop\TESTER Automaty\Zjazd 5\Booking_com\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_hotel_search.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_hotel_search.py" type="tests" factoryName="py.test" nameIsGenerated="true">
+      <module name="Booking_com" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\Michał\Desktop\TESTER Automaty\Zjazd 5\Booking_com\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_hotel_search.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.Search_hotel_test" />
+      <item itemvalue="Python.test_hotel_search" />
+      <item itemvalue="Python tests.pytest in test_hotel_search.py" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Search_hotel_test" />
+        <item itemvalue="Python.test_hotel_search" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c6c7e8f1-d0f7-4eba-b2fc-f8a3beecfc79" name="Default Changelist" comment="" />
+      <created>1592670940207</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592670940207</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="201" y="22" width="1092" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593195494934">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="201" y="22" width="1092" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/-1680.-319.1680.1010@0.0.1366.728" timestamp="1593195494934" />
+    <state x="463" y="76" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1593022608166">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="76" key="#com.intellij.ide.macro.MacrosDialog/0.0.1366.728/-1680.-319.1680.1010@0.0.1366.728" timestamp="1593022608166" />
+    <state x="402" y="0" key="#test_hotel_search" timestamp="1593022784210">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="402" y="0" key="#test_hotel_search/0.0.1366.728/-1680.-319.1680.1010@0.0.1366.728" timestamp="1593022784210" />
+    <state x="417" y="133" key="EnvironmentVariablesDialog" timestamp="1593022826783">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="417" y="133" key="EnvironmentVariablesDialog/0.0.1366.728/-1680.-319.1680.1010@0.0.1366.728" timestamp="1593022826783" />
+    <state x="463" y="126" key="FileChooserDialogImpl" timestamp="1593257977022">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="126" key="FileChooserDialogImpl/0.0.1366.728/-1680.-319.1680.1010@0.0.1366.728" timestamp="1593257977022" />
+    <state width="1345" height="185" key="GridCell.Tab.0.bottom" timestamp="1593196902068">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="185" key="GridCell.Tab.0.bottom/0.0.1366.728/-1680.-319.1680.1010@0.0.1366.728" timestamp="1593196902068" />
+    <state width="1345" height="185" key="GridCell.Tab.0.center" timestamp="1593196902068">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="185" key="GridCell.Tab.0.center/0.0.1366.728/-1680.-319.1680.1010@0.0.1366.728" timestamp="1593196902068" />
+    <state width="1345" height="185" key="GridCell.Tab.0.left" timestamp="1593196902068">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="185" key="GridCell.Tab.0.left/0.0.1366.728/-1680.-319.1680.1010@0.0.1366.728" timestamp="1593196902068" />
+    <state width="1345" height="185" key="GridCell.Tab.0.right" timestamp="1593196902068">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="185" key="GridCell.Tab.0.right/0.0.1366.728/-1680.-319.1680.1010@0.0.1366.728" timestamp="1593196902068" />
+    <state width="1345" height="223" key="GridCell.Tab.1.bottom" timestamp="1592946518171">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728/-1680.-319.1680.1010@0.0.1366.728" timestamp="1592946518171" />
+    <state width="1345" height="223" key="GridCell.Tab.1.center" timestamp="1592946518171">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="223" key="GridCell.Tab.1.center/0.0.1366.728/-1680.-319.1680.1010@0.0.1366.728" timestamp="1592946518171" />
+    <state width="1345" height="223" key="GridCell.Tab.1.left" timestamp="1592946518171">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="223" key="GridCell.Tab.1.left/0.0.1366.728/-1680.-319.1680.1010@0.0.1366.728" timestamp="1592946518171" />
+    <state width="1345" height="223" key="GridCell.Tab.1.right" timestamp="1592946518171">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="223" key="GridCell.Tab.1.right/0.0.1366.728/-1680.-319.1680.1010@0.0.1366.728" timestamp="1592946518171" />
+    <state x="184" y="6" key="SettingsEditor" timestamp="1593198224762">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="6" key="SettingsEditor/0.0.1366.728/-1680.-319.1680.1010@0.0.1366.728" timestamp="1593198224762" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1593198193295">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1680.-319.1680.1010@0.0.1366.728" timestamp="1593198193295" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1592934316284">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/-1680.-319.1680.1010@0.0.1366.728" timestamp="1592934316284" />
+  </component>
+</project>

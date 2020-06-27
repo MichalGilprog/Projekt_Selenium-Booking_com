@@ -1,0 +1,1 @@
+[32mINFO    [0m pages.search_hotel:search_hotel.py:42 Akceptuję wyświetlanie plików cookies

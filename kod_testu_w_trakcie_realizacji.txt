@@ -1,0 +1,127 @@
+from random import randrange
+from time import sleep
+
+from selenium import webdriver
+from selenium.common.exceptions import NoSuchElementException
+from webdriver_manager.chrome import ChromeDriverManager
+
+driver = webdriver.Chrome(ChromeDriverManager().install())
+driver.implicitly_wait(3)
+driver.maximize_window()
+driver.get("https://www.booking.com/")
+print(driver.title)
+driver.find_element_by_xpath("//div[@class='cookie-warning-v2__banner-cta']"
+                             "/a[text()='Odrzuć']").click()
+cityInput = driver.find_element_by_id("ss")
+cityInput.send_keys("Hel")
+driver.find_element_by_xpath("//span[@class='search_hl_name']").click()
+driver.find_element_by_xpath("//div[@class='bui-calendar__control bui-calendar__control--next']").click()
+logInData = driver.find_element_by_xpath(
+    "//form[1]//div[1]//div[2]//div[2]//div[1]//div[1]//div[3]//div[1]//table[1]//tbody[1]//tr[3]//td[6]")
+logInData.click()
+logOutData = driver.find_element_by_xpath(
+    "//form[1]//div[1]//div[2]//div[2]//div[1]//div[1]//div[3]//div[1]//table[1]//tbody[1]//tr[4]//td[7]")
+logOutData.click()
+
+driver.find_element_by_id("xp__guests__toggle")
+frame = driver.find_element_by_id("xp__guests__inputs-container")
+
+try:
+    isFrame = driver.find_element_by_xpath("//label[@id='xp__guests__toggle'][@aria-expanded='true']")
+    print("Is eneble")
+
+except NoSuchElementException:
+
+    print("Is disable so I click on it")
+    driver.find_element_by_id("xp__guests__toggle").click()
+
+driver.find_element_by_xpath("//div[@class='sb-group__field sb-group__field-adults']"
+                             "//button[contains(@class,'bui-button bui-button--secondary bui-stepper__subtract-button')] ").click()
+
+addButton = driver.find_element_by_xpath("//div[contains(@class,'sb-group__field sb-group-children')]"
+                                         "//button[contains(@class,'bui-button bui-button--secondary bui-stepper__add-button')]")
+addButton.click()
+addButton.click()
+
+children = driver.find_elements_by_name("age")
+print(len(children))
+# if len(children) > 1:
+# children[0].click()
+# i = 0
+for child in children:
+    child.location_once_scrolled_into_view
+    child.click()
+    child.send_keys(randrange(18))
+    child.click()
+
+driver.find_element_by_class_name("xp__button").click()
+
+results = driver.find_elements_by_xpath("//div[@id='hotellist_inner']"
+                                        "/div[@class='sr_item  sr_item_new sr_item_default sr_property_block  sr_flex_layout          ']")
+print(len(results))
+hotels = driver.find_elements_by_xpath(
+    "//h3[contains(@class,'sr-hotel__title')]//span[contains(@class,'sr-hotel__name')]")
+hotel_names = [hotel.get_attribute("textContent") for hotel in hotels]
+for name in hotel_names:
+   # print("Hotel name: " + name)
+    print(name)
+
+prices = driver.find_elements_by_xpath(
+    "//div[contains(@class,'prc-d-sr-wrapper')]//div[contains(@class,'bui-price-display__value')]")
+price_values = [price.get_attribute("textContent") for price in prices]
+i = 0
+for hotel_price in price_values:
+    i += 1
+    print("Cena " + str(i) + " hotelu: " + hotel_price)
+
+    # //div[contains(@class,'prc-d-sr-wrapper')]//span[contains(@class,'bui-u-sr-only')]
+# //div[contains(@class,'prc-d-sr-wrapper')]//div[contains(@class,'bui-price-display__value')]
+
+
+Hel_results =driver.find_elements_by_xpath("//div[@id='hotellist_inner']//a[contains (text(),'Hel')]")
+print(len(Hel_results))
+print(Hel_results)
+Hel_hotels = [Hel.text for Hel in Hel_results]
+print(Hel_hotels)
+
+
+
+'''
+expect_hotel_names= [
+                        'Cassubia',
+                        'Natural Hel Apartamenty',
+                        'Na Wydmach. Spokój. Cisza. Las dookoła',
+                        'Baltic Sands - Aparthotel',
+                        'Sielski Hel',
+                        'Bałtyckie-Hel',
+                        'Apartamenty BestHel',
+                        'Kantal Apartamenty Hel',
+                        'Jurata',
+                        'Apartamenty i Domki PrzystańTu',
+                        'Marina Plaza Ozonowane Apartamenty',
+                        'Marina Jastarnia Apartamenty',
+                        'Odyseusz Jastarnia',
+                        'Willa Mewa',
+                        'Apartamenty Marina Jastarnia Bis',
+                        'Pokoje z widokiem na morze',
+                        'Willa Groszek',
+                        'Hotel Dom Zdrojowy Resort & SPA',
+                        'Apartament Marina',
+                        'Rezydencja Lux',
+                        'Hotton Hotel',
+                        'Willa Bursztynowa',
+                        'Hotel Skipper',
+                        'Hotel Dom Marynarza',
+                        'Hotel 77 Restauracja Spa']
+
+x = 0
+for name in hotel_names:
+    print(hotel_names[0], expect_hotel_names[0])
+    assert hotel_names[0] == expect_hotel_names[0]
+    pass
+    x = 1+x
+'''
+
+
+
+driver.quit()

@@ -1,0 +1,3 @@
+[32mINFO    [0m pages.search_hotel:search_hotel.py:42 Akceptuję wyświetlanie plików cookies 
+[32mINFO    [0m pages.search_hotel:search_hotel.py:47 Zmieniam język strony na angielski
+[32mINFO    [0m pages.search_hotel:search_hotel.py:53 Ustawiam miasto Hel

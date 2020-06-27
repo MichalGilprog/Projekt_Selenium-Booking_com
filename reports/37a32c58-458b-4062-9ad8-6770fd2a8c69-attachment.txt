@@ -1,0 +1,13 @@
+[32mINFO    [0m pages.search_hotel:search_hotel.py:42 Akceptuję wyświetlanie plików cookies 
+[32mINFO    [0m pages.search_hotel:search_hotel.py:47 Zmieniam język strony na angielski
+[32mINFO    [0m pages.search_hotel:search_hotel.py:53 Ustawiam miasto Hel
+[32mINFO    [0m pages.search_hotel:search_hotel.py:60 Ustawiam datę zameldowania 3 July 2020 i wymeldowania 13 July 2020 
+[32mINFO    [0m pages.search_hotel:search_hotel.py:93 Sprawdzam czy ramka ustawień jest uruchomiona,ustawiam osobę dorosłą i 2 dzieci  
+[32mINFO    [0m pages.search_hotel:search_hotel.py:99 Uruchamiam wyszukiwanie
+[32mINFO    [0m pages.search_results:search_results.py:24 Sprawdzam wyświwetlaną na stronie liczbę pensjonatów: 25
+[32mINFO    [0m pages.search_results:search_results.py:33 sprawdzam czy kwota za wynajem jest podana we właściwej walucie: 
+[32mINFO    [0m pages.search_results:search_results.py:37 zł
+[32mINFO    [0m pages.search_results:search_results.py:42 sprawdzam czy kwota za wynajem jest podana we właściwej walucie 'zł'
+[32mINFO    [0m pages.search_results:search_results.py:67 Liczba pensjonatów z właściwą lokalizacją na Helu: 18
+[32mINFO    [0m pages.search_results:search_results.py:81 Komunikat o wynikach dla szukanego miasta: 
+Hel: 18 properties found
